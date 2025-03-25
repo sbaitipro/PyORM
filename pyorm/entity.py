@@ -6,8 +6,8 @@ class Entity:
     db = None  # Static database connection
 
     @classmethod
-    def connect(cls):
-        cls.db = DBManager.connect()
+    def connect(cls, path=None):
+        cls.db = DBManager.connect(path)
         if cls.db is None:
             raise ConnectionError("Failed to establish a database connection.")
 
