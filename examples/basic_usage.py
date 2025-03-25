@@ -23,7 +23,7 @@ class User(Entity):
 
 
 # Step 1: Connect to the database
-DBManager.connect("example/database/test.db")
+DBManager.connect("examples/database/test.db")
 User.connect()
 
 # Step 2: Create the 'users' table if it doesn't exist
