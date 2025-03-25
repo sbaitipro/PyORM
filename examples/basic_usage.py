@@ -29,7 +29,10 @@ User.connect()
 # Step 2: Create the 'users' table if it doesn't exist
 if not User.is_table_exist():
     User.create_table()
-    User.delete_all()
+    
+
+# Delete all records if exist
+User.delete_all()
 
 # Step 3: Insert a new user
 user = User(username="groot", email="groot@example.com")
